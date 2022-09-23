@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填写订单</title>
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-3.4.1-dist/js/jquery-3.6.1.min.js"></script>
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style>
+        .li1 {
+            list-style: none;
+            margin-left: 5%;
+        }
+
+        .sp1 {
+            display: inline-block;
+            width: 60px;
+            height: 35px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .inp1 {
+            margin-top: 5px;
+            margin-left: 20px;
+            height: 35px;
+            width: 50%;
+            border: 1px lightgrey solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid" style="margin-right: 20px;margin-left: 20px">
+    <!--头-->
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-xs-12">
+            <img src="pics/img/logo2.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12">
+            <img src="pics/img/header.jpg" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6" style="margin-top: 20px">
+                    <a style="margin-left: 10px" href="login.html">登录</a>
+                    <a style="margin-left: 10px" href="register.html">注册</a>
+                    <a style="margin-left: 10px" href="myOrder.html">购物车</a>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+    <!--导航条-->
+    <div class="row">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">手机数码 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="fruitsList.html">蔬菜商城</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">电脑办公<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="introduction.html">公司介绍<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <!--订单信息-->
+    <div class="row">
+        <div class="col-lg-3 col-xs-12"></div>
+        <div class="col-lg-6 col-xs-12">
+            <!--订单详情-->
+            <div class="row" style="height: 45px;width: 100%;">
+                <div style="margin-top: 10px;margin-left: 10px;font-weight: bold;">
+                    <span>订单详情</span>
+                </div>
+            </div>
+            <!--订单详情-->
+            <div class="row">
+                <table class="table table-hover table-bordered">
+                    <tbody>
+                    <tr>
+                        <th colspan="5" class="warning">订单编号:9005</th>
+                    </tr>
+                    <tr class="warning">
+                        <td>图片</td>
+                        <td>商品</td>
+                        <td>价格</td>
+                        <td>数量</td>
+                        <td>小计</td>
+                    </tr>
+                    <tr class="active">
+                        <td>
+                            <img src="pics/image/dadonggua.jpg" width="50px" alt="">
+                        </td>
+                        <td><a href="">有机蔬菜 大冬瓜...</a></td>
+                        <td>￥298.00</td>
+                        <td>5</td>
+                        <td>￥596.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--提交订单-->
+            <div class="row">
+                <p style="text-align: right">
+                    商品金额: <span style="color: #FF7041;font-weight: bold">￥596.00元</span>
+                </p>
+                <hr>
+            </div>
+            <div class="row">
+                <li class="li1">
+                    <span class="sp1">地址</span>
+                    <input class="inp1" type="text" name="" value="" placeholder="请输入收货地址">
+                </li>
+                <li class="li1">
+                    <span class="sp1">收货人</span>
+                    <input class="inp1" type="text" name="" value="" placeholder="请输入收货人姓名">
+                </li>
+                <li class="li1">
+                    <span class="sp1">电话</span>
+                    <input class="inp1" type="text" name="" value="" placeholder="请输入联系方式">
+                </li>
+                <hr>
+            </div>
+            <div class="row">
+                <p style="margin-left: 6%;font-weight: bold">选择银行:</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    工商银行
+                    <img src="pics/bank_img/icbc.bmp" width="60%" alt="">
+                </div>
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    中国银行
+                    <img src="pics/bank_img/bc.bmp" width="60%" alt="">
+                </div>
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    中国银行
+                    <img src="pics/bank_img/abc.bmp" width="60%" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    交通银行
+                    <img src="pics/bank_img/bcc.bmp" width="60%" alt="">
+                </div>
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    平安银行
+                    <img src="pics/bank_img/pingan.bmp" width="60%" alt="">
+                </div>
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    建设银行
+                    <img src="pics/bank_img/ccb.bmp" width="60%" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    上海银行
+                    <img src="pics/bank_img/sh.bmp" width="60%" alt="">
+                </div>
+                <div class="col-lg-4 col-xs-12" style="text-align: center">
+                    <input type="radio" name="bank">
+                    招商银行
+                    <img src="pics/bank_img/cmb.bmp" width="60%" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8"></div>
+                <div class="col-lg-3">
+                    <a href="orderDetails.html"
+                       style="display: block;width: 100%;height: 50px;background-image: linear-gradient(white, #DEEFC9);border:1px solid lightgrey;text-align: center;cursor: pointer">
+                        <span style="margin-top: 15px;display: inline-block;font-size: 16px;font-weight: bold;color: #F7951F;">确认订单</span>
+                    </a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-lg-3 col-xs-12"></div>
+    </div>
+    <!--footer-->
+    <div class="row">
+        <img src="pics/img/footer.jpg" alt="" width="100%">
+    </div>
+    <!--关于版权-->
+    <div class="row" style="margin-top: 5px">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-4 col-md-4">
+            <a style="margin-left: 20px" href="">关于我们</a>
+            <a style="margin-left: 20px" href="">联系我们</a>
+            <a style="margin-left: 20px" href="">招纳贤士</a>
+            <a style="margin-left: 20px" href="">法律声明</a>
+            <a style="margin-left: 20px" href="">友情链接</a>
+            <a style="margin-left: 20px" href="">支付方式</a>
+            <a style="margin-left: 20px" href="">配送方式</a>
+            <a style="margin-left: 20px" href="">服务声明</a>
+            <a style="margin-left: 20px" href="">广告声明</a>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+    </div>
+    <div class="row" style="text-align: center;margin-top: 10px">
+        Copyright &copy; 2005-2016 惠多多商城 版权所有
+    </div>
+</div>
+</body>
+</html>
